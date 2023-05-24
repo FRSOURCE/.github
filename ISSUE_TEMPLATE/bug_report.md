@@ -1,0 +1,87 @@
+name: "🐛 Bug report"
+description: |
+  Create a report to help us improve
+labels:
+  - bug
+  - triage-needed
+title: '[Bug]: '
+body:
+  - type: textarea
+    id: currentbehavior
+    attributes:
+      label: Describe the Bug
+      placeholder: A clear and concise description of what the bug is
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: Steps to reproduce the behavior, e.g.: 1. Go to '...'. 2. Click on '...'. 3. See error.
+  - type: textarea
+    id: expectedbehavior
+    attributes:
+      label: Expected behavior
+      placeholder: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: additionacontext
+    attributes:
+      label: Additional context
+      placeholder: Add any other context about the problem here.
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Package version
+      placeholder: What version of package are you using?
+      description: 'For example: 1.0.1'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Device
+      placeholder: On what device the bug is reproducible?
+      description: 'For example: iPhone8, PC'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: OS and version
+      placeholder: What operating system are you using?
+      description: 'For example: iOS 8.1, Windows 11'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Browser and version
+      placeholder: What browser are you using?
+      description: 'For example: chrome 22, Safari'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Node version
+      placeholder: What version of Node.js are you using?
+      description: 'For example: 12.0.0'
+    validations:
+      required: true
+  - type: checkboxes
+    id: fixthebug
+    attributes:
+      label: I can work on it by myself
+      description:  Are you able and willing to work on this by yourself (with our help if needed)?
+      options:
+        - label: 'Yes'
+          required: false
+        - label: 'No'
+          required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct (accessible in the root of this repository)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
